@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Nen-bR-0f2">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sunset info-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Sunrize" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="TUq-ep-9Yp">
+                                <rect key="frame" x="16" y="64" width="343" height="603"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://sunrise-sunset.org/api" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYj-1Q-nXq">
+                                        <rect key="frame" x="8" y="8" width="327" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sun progress:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIp-FJ-van">
+                                        <rect key="frame" x="8" y="36.5" width="327" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="phi-Um-oda">
+                                        <rect key="frame" x="6" y="65" width="331" height="70"/>
+                                        <color key="minimumTrackTintColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="maximumTrackTintColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="thumbTintColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yAd-J0-1vn">
+                                        <rect key="frame" x="8" y="142" width="327" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="V1U-SC-rJj">
+                                        <rect key="frame" x="8" y="170.5" width="327" height="386.5"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="749" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xfw-aZ-axP">
+                                                <rect key="frame" x="0.0" y="0.0" width="327" height="386.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="74L-Db-Joq">
+                                        <rect key="frame" x="8" y="565" width="327" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKc-ZT-mcP">
+                                                <rect key="frame" x="0.0" y="0.0" width="163.5" height="30"/>
+                                                <state key="normal" title="Refresh"/>
+                                                <connections>
+                                                    <action selector="refresh" destination="BYZ-38-t0r" eventType="touchUpInside" id="OpG-1Q-N0k"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3c-18-PnX">
+                                                <rect key="frame" x="163.5" y="0.0" width="163.5" height="30"/>
+                                                <state key="normal" title="Pick location"/>
+                                                <connections>
+                                                    <segue destination="QDI-Yg-ahv" kind="show" id="acc-PU-FtF"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TUq-ep-9Yp" secondAttribute="bottom" id="IWh-jf-x8q"/>
+                            <constraint firstItem="TUq-ep-9Yp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="X07-6J-9gW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TUq-ep-9Yp" secondAttribute="trailing" id="gQ3-Ia-hgT"/>
+                            <constraint firstItem="TUq-ep-9Yp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="kcg-ai-sm9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sunset info" id="70o-eQ-FR8"/>
+                    <connections>
+                        <outlet property="dayProgressView" destination="phi-Um-oda" id="eMn-Hb-AaE"/>
+                        <outlet property="sunrizeDetailsView" destination="Xfw-aZ-axP" id="2Hk-uS-kVp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="364" y="31.934032983508249"/>
+        </scene>
+        <!--Location Picker View Controller-->
+        <scene sceneID="bpu-s3-jV2">
+            <objects>
+                <viewController id="QDI-Yg-ahv" customClass="LocationPickerViewController" customModule="Sunrize" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bt6-oH-Os2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="J8w-XD-aCW">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C9y-pw-czn">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outlet property="delegate" destination="QDI-Yg-ahv" id="TAR-y0-sYx"/>
+                                            <outletCollection property="gestureRecognizers" destination="Z5X-cl-1Gi" appends="YES" id="LbV-eY-JRR"/>
+                                        </connections>
+                                    </mapView>
+                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="aVZ-ly-baX">
+                                        <rect key="frame" x="0.0" y="559" width="375" height="44"/>
+                                        <items>
+                                            <barButtonItem enabled="NO" title="Choose this" id="cvH-cx-8t1">
+                                                <connections>
+                                                    <action selector="pickLocation" destination="QDI-Yg-ahv" id="dT0-jo-jVA"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem style="plain" systemItem="flexibleSpace" id="8sO-b9-L67"/>
+                                            <barButtonItem title="Use my location" id="lu0-VS-qz6">
+                                                <connections>
+                                                    <action selector="requestLocation" destination="QDI-Yg-ahv" id="z2W-Np-lHi"/>
+                                                </connections>
+                                            </barButtonItem>
+                                        </items>
+                                    </toolbar>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="J8w-XD-aCW" firstAttribute="bottom" secondItem="NSE-5V-3U0" secondAttribute="bottom" id="V0L-lE-qwr"/>
+                            <constraint firstItem="J8w-XD-aCW" firstAttribute="trailing" secondItem="NSE-5V-3U0" secondAttribute="trailing" id="fZv-5B-kyx"/>
+                            <constraint firstItem="J8w-XD-aCW" firstAttribute="top" secondItem="NSE-5V-3U0" secondAttribute="top" id="gRr-Gz-UXX"/>
+                            <constraint firstItem="J8w-XD-aCW" firstAttribute="leading" secondItem="NSE-5V-3U0" secondAttribute="leading" id="jUD-dm-90R"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NSE-5V-3U0"/>
+                    </view>
+                    <toolbarItems/>
+                    <connections>
+                        <outlet property="mapView" destination="C9y-pw-czn" id="kHt-v0-LRJ"/>
+                        <outlet property="pickButton" destination="cvH-cx-8t1" id="ZI0-Np-FHF"/>
+                        <outlet property="scanButton" destination="lu0-VS-qz6" id="U05-oh-Zab"/>
+                        <segue destination="CuA-T9-Xpt" kind="unwind" identifier="return" unwindAction="returnLocation:" id="Xu6-cA-ce2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ub-EY-ddp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="CuA-T9-Xpt" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="Z5X-cl-1Gi">
+                    <connections>
+                        <action selector="tapMapView:" destination="QDI-Yg-ahv" id="CQk-l6-mFn"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1290" y="32"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8pf-ic-Pv9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Nen-bR-0f2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XIV-Il-5jn">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ma5-eH-a98"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u7g-BD-edd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-457" y="32"/>
+        </scene>
+    </scenes>
+</document>

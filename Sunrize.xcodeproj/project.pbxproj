@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D20DBD12148405C00889185 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D20DBD02148405C00889185 /* AppDelegate.swift */; };
+		0D20DBD32148405C00889185 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D20DBD22148405C00889185 /* MainViewController.swift */; };
+		0D20DBD62148405C00889185 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D20DBD42148405C00889185 /* Main.storyboard */; };
+		0D20DBD82148405C00889185 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D20DBD72148405C00889185 /* Assets.xcassets */; };
+		0D20DBDB2148405C00889185 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D20DBD92148405C00889185 /* LaunchScreen.storyboard */; };
+		0D20DBE5214842C700889185 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D20DBE4214842C700889185 /* NetworkService.swift */; };
+		0D20DBE8214850FF00889185 /* SunrizeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D20DBE7214850FF00889185 /* SunrizeData.swift */; };
+		0D20DBEE2148806D00889185 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D20DBED2148806D00889185 /* Formatters.swift */; };
+		0D20DBF02148908500889185 /* LocationPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D20DBEF2148908500889185 /* LocationPickerViewController.swift */; };
+		8E8F30C8A429BFE7442C3CEC /* Pods_Sunrize.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 389A32540BF8BA16211BEE8B /* Pods_Sunrize.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0D20DBCD2148405C00889185 /* Sunrize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sunrize.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D20DBD02148405C00889185 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0D20DBD22148405C00889185 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		0D20DBD52148405C00889185 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0D20DBD72148405C00889185 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0D20DBDA2148405C00889185 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0D20DBDC2148405C00889185 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D20DBE4214842C700889185 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		0D20DBE7214850FF00889185 /* SunrizeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunrizeData.swift; sourceTree = "<group>"; };
+		0D20DBED2148806D00889185 /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
+		0D20DBEF2148908500889185 /* LocationPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPickerViewController.swift; sourceTree = "<group>"; };
+		389A32540BF8BA16211BEE8B /* Pods_Sunrize.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sunrize.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F8B8992EE2CCDD486C90445 /* Pods-Sunrize.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sunrize.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sunrize/Pods-Sunrize.debug.xcconfig"; sourceTree = "<group>"; };
+		B6B97E6E0544A39D4609C7F5 /* Pods-Sunrize.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sunrize.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sunrize/Pods-Sunrize.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D20DBCA2148405C00889185 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E8F30C8A429BFE7442C3CEC /* Pods_Sunrize.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09DFEBC2A80969A0DA340219 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				389A32540BF8BA16211BEE8B /* Pods_Sunrize.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0D20DBC42148405C00889185 = {
+			isa = PBXGroup;
+			children = (
+				0D20DBCF2148405C00889185 /* Sunrize */,
+				0D20DBCE2148405C00889185 /* Products */,
+				3DE3B3B013EC3040F5C77DE3 /* Pods */,
+				09DFEBC2A80969A0DA340219 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0D20DBCE2148405C00889185 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D20DBCD2148405C00889185 /* Sunrize.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D20DBCF2148405C00889185 /* Sunrize */ = {
+			isa = PBXGroup;
+			children = (
+				0D20DBD02148405C00889185 /* AppDelegate.swift */,
+				0D20DBE6214850E300889185 /* Model */,
+				0D20DBE22148416700889185 /* Controllers */,
+				0D20DBE32148417100889185 /* UI */,
+				0D20DBDC2148405C00889185 /* Info.plist */,
+				0D20DBE92148527F00889185 /* Service */,
+			);
+			path = Sunrize;
+			sourceTree = "<group>";
+		};
+		0D20DBE22148416700889185 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0D20DBD22148405C00889185 /* MainViewController.swift */,
+				0D20DBEF2148908500889185 /* LocationPickerViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0D20DBE32148417100889185 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0D20DBEC2148802700889185 /* Components */,
+				0D20DBD42148405C00889185 /* Main.storyboard */,
+				0D20DBD72148405C00889185 /* Assets.xcassets */,
+				0D20DBD92148405C00889185 /* LaunchScreen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		0D20DBE6214850E300889185 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0D20DBE7214850FF00889185 /* SunrizeData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0D20DBE92148527F00889185 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0D20DBE4214842C700889185 /* NetworkService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		0D20DBEC2148802700889185 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0D20DBED2148806D00889185 /* Formatters.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		3DE3B3B013EC3040F5C77DE3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F8B8992EE2CCDD486C90445 /* Pods-Sunrize.debug.xcconfig */,
+				B6B97E6E0544A39D4609C7F5 /* Pods-Sunrize.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0D20DBCC2148405C00889185 /* Sunrize */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D20DBDF2148405C00889185 /* Build configuration list for PBXNativeTarget "Sunrize" */;
+			buildPhases = (
+				4BEC478813E9E758A4971EBC /* [CP] Check Pods Manifest.lock */,
+				0D20DBC92148405C00889185 /* Sources */,
+				0D20DBCA2148405C00889185 /* Frameworks */,
+				0D20DBCB2148405C00889185 /* Resources */,
+				9E5D490D7DBF4286EB5F0D9C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sunrize;
+			productName = Sunrize;
+			productReference = 0D20DBCD2148405C00889185 /* Sunrize.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0D20DBC52148405C00889185 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = test;
+				TargetAttributes = {
+					0D20DBCC2148405C00889185 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0D20DBC82148405C00889185 /* Build configuration list for PBXProject "Sunrize" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0D20DBC42148405C00889185;
+			productRefGroup = 0D20DBCE2148405C00889185 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D20DBCC2148405C00889185 /* Sunrize */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D20DBCB2148405C00889185 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D20DBDB2148405C00889185 /* LaunchScreen.storyboard in Resources */,
+				0D20DBD82148405C00889185 /* Assets.xcassets in Resources */,
+				0D20DBD62148405C00889185 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4BEC478813E9E758A4971EBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sunrize-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E5D490D7DBF4286EB5F0D9C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Sunrize/Pods-Sunrize-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sunrize/Pods-Sunrize-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D20DBC92148405C00889185 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D20DBD32148405C00889185 /* MainViewController.swift in Sources */,
+				0D20DBF02148908500889185 /* LocationPickerViewController.swift in Sources */,
+				0D20DBE5214842C700889185 /* NetworkService.swift in Sources */,
+				0D20DBE8214850FF00889185 /* SunrizeData.swift in Sources */,
+				0D20DBEE2148806D00889185 /* Formatters.swift in Sources */,
+				0D20DBD12148405C00889185 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0D20DBD42148405C00889185 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D20DBD52148405C00889185 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0D20DBD92148405C00889185 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D20DBDA2148405C00889185 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0D20DBDD2148405C00889185 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0D20DBDE2148405C00889185 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0D20DBE02148405C00889185 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F8B8992EE2CCDD486C90445 /* Pods-Sunrize.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Sunrize/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.Sunrize;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0D20DBE12148405C00889185 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6B97E6E0544A39D4609C7F5 /* Pods-Sunrize.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Sunrize/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.Sunrize;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D20DBC82148405C00889185 /* Build configuration list for PBXProject "Sunrize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D20DBDD2148405C00889185 /* Debug */,
+				0D20DBDE2148405C00889185 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D20DBDF2148405C00889185 /* Build configuration list for PBXNativeTarget "Sunrize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D20DBE02148405C00889185 /* Debug */,
+				0D20DBE12148405C00889185 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0D20DBC52148405C00889185 /* Project object */;
+}
